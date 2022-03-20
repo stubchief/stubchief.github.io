@@ -1,0 +1,136 @@
+body{
+    margin: 0px;
+}
+#title_box{
+    height: 100vh;
+    display: flex;
+}
+#title{
+    font-size: 72pt;
+    border: 5px solid indigo;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+main{
+    font-size: 16pt;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-gap: 50px;
+    justify-content: center;
+    grid-template-areas: 
+    "nav"
+    "art"
+    "act"
+    "emp"
+    "foo";
+}
+nav{
+    grid-area: nav;
+}
+li{
+    padding: 5px;
+}
+#navbar a{
+    color: inherit;
+    text-decoration: none;
+}
+#navbar li:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+article{
+    grid-area: art;
+    padding: 15px;
+}
+#activity{
+    grid-area: act;
+    padding: 15px;
+}
+#buttons_box{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+}
+.button{
+    text-align: left;  
+    font: inherit !important;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+}
+.button:hover{
+    background-color: #c8c8c8;
+}
+.button:focus{
+    background-color: #555;
+    color: lightgray;
+}
+.button_right{
+    background-color: #4CAF50;
+    color: white;
+    pointer-events: none;
+}
+.button_wrong{
+    background-color: #f44336;
+    color: white;
+    pointer-events: none;
+}
+.button_disabled{
+    opacity: 0.6;
+    pointer-events: none;
+}
+#empty{
+    grid-area: emp;
+    height: 300px;
+}
+footer{
+    grid-area: foo;
+    background-color: black;
+    color: white;
+    font: 12pt;
+    text-align: center;
+    padding: 15px;
+}
+@media (min-width: 1200px){
+    main{
+        grid-template-columns:  250px 800px;
+        grid-template-areas: 
+        "nav art"
+        "nav act"
+        "nav emp"
+        "foo foo";
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+        position: sticky;
+        top: calc(50% - 150px);
+    }
+    li{
+        border-right: 2px solid grey;
+    }
+    #navborder{
+        padding: 0;
+        margin: 0;
+        border-right: solid 1px grey;
+    }
+}
+figure{
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+figcaption{
+    margin-top: 10px;
+}
