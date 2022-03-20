@@ -2,6 +2,11 @@ body{
     margin: 0px;
     
 }
+@media (max-width: 1000px){/*MAGIC*/
+    body{
+        text-size-adjust: 250%;
+    }
+}
 #title_box{
     height: 100vh;
     display: flex;
@@ -30,7 +35,6 @@ main{
 }
 nav{
     grid-area: nav;
-    padding: 15px;
 }
 li{
     padding: 5px;
@@ -100,6 +104,9 @@ footer{
     padding: 15px;
 }
 @media (min-width: 1200px){
+    body{
+        margin: 0;
+    }
     main{
         justify-content: center;
         grid-template-columns:  250px 800px;
@@ -120,11 +127,7 @@ footer{
     li{
         border-right: 2px solid grey;
     }
-    #navborder{
-        padding: 0;
-        margin: 0;
-        border-right: solid 1px grey;
-    }
+    #img1{max-width: 200px;}
 }
 figure{
     font-size: 12pt;
@@ -136,3 +139,8 @@ figure{
 figcaption{
     margin-top: 10px;
 }
+
+@media (max-width: 1000px){
+    #img1{max-width: 50vw;}
+
+};
