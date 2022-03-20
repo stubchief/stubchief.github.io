@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="style.css">
     <title>Полупроводники, их прошлое и будущее</title>
     <script src="quiz.js"></script>
     <script>
         function scrollTo(linkNum){
-            document.getElementsByTagName("h2")[linkNum - 1].scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            document.getElementsByTagName("h2")[linkNum].scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
     </script>
 </head>
@@ -22,6 +22,7 @@
     </script>
     <main>
         <nav>
+            <h2>Оглавление</h2>
             <ul id="navbar" type="none">
                 <li><a href="javascript:scrollTo(1)">Что такое полупроводники</a></li>
                 <li><a href="javascript:scrollTo(2)">История полупроводников</a></li>
