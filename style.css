@@ -26,6 +26,7 @@ main{
     "art"
     "act"
     "emp"
+    "ar2"
     "foo";
     padding-left: 10px;
     padding-right: 10px;
@@ -101,6 +102,10 @@ img{
     grid-area: emp;
     height: 300px;
 }
+#article2{
+    grid-area: ar2;
+    padding: 15px;
+}
 footer{
     grid-area: foo;
     background-color: black;
@@ -121,6 +126,7 @@ footer{
         "nav art"
         "nav act"
         "nav emp"
+        "nav ar2"
         "foo foo";
     }
     #navbar{
@@ -134,7 +140,9 @@ footer{
     li{
         border-right: 2px solid grey;
     }
-    img{max-width: 225px;}
+    img{
+        max-width: 225px;
+    }
 }
 figure{
     font-size: 12pt;
@@ -146,4 +154,7 @@ figure{
 }
 figcaption{
     margin-top: 10px;
+}
+#article2 li{
+    border-right: none;
 }
