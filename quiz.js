@@ -23,6 +23,7 @@ class Quiz{
             }
             this.quiz_data.splice(rand, 1);
             document.getElementById("button_updater").className = "button button_disabled";
+            document.getElementById("button_updater").blur();
         }
     }
     check(choosenId){
