@@ -65,8 +65,10 @@ img{
     border-radius: 8px;
     transition-duration: 0.2s;
 }
-.button:hover{
-    background-color: #c8c8c8;
+@media (hover: hover) {
+    .button:hover{
+        background-color: #c8c8c8;
+    }
 }
 .button:focus{
     background-color: #555;
